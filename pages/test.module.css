@@ -1,0 +1,37 @@
+.testh2 {
+	font-size: 1.5rem;
+}
+@media (max-width: 486px) {
+	.testh2 {
+		font-size: 1.2rem;
+	}
+}
+
+.test {
+	font-size: 7rem;
+}
+
+@media (max-width: 486px) {
+	.test {
+		font-size: 6rem;
+	}
+}
+
+.ques {
+	font-size: 1.7rem;
+}
+
+@media (max-width: 486px) {
+	.ques {
+		font-size: 1.2rem;
+	}
+}
+
+.yesno {
+	font-size: 2rem;
+}
+@media (max-width: 486px) {
+	.yesno {
+		font-size: 1.3rem;
+	}
+}

@@ -1,0 +1,204 @@
+@media (max-width: 1500px) {
+  .puzzle1 {
+    top: 0;
+    right: -140px;
+  }
+
+  .puzzle2 {
+    top: 300px;
+    left: -230px;
+  }
+
+  .puzzle3 {
+    bottom: -100px;
+    left: -100px;
+  }
+
+  .puzzle4 {
+    top: 0;
+    left: -120px;
+  }
+
+  .puzzle5 {
+    right: -90px;
+  }
+}
+
+.textBuner {
+  opacity: 0.1;
+  letter-spacing: 7px;
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  z-index: 2;
+  font-size: 90px;
+  font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+  .textBuner {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .textBuner {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .textBuner {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+}
+
+
+
+.main {
+  height: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.puzzle2 {
+  transform: rotate(35deg);
+}
+
+.wrapperPrice {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.checkList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 130px;
+}
+
+.checkList:last-child {
+  margin: 40px 0 0;
+}
+
+.containerCheckList {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.checkListNames {
+  flex-wrap: wrap;
+}
+
+.checkListName {
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+
+.checkListPrice {
+  display: flex;
+  align-items: stretch;
+}
+
+.checkListPriceFive {
+  align-items: center;
+  opacity: 0.5;
+  color: rgb(134, 86, 32);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.oldPrice {
+  position: absolute;
+  top: -30px;
+  left: 25px;
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: line-through;
+  text-decoration-color: red;
+  color: rgb(134, 86, 32);
+  opacity: 0.5;
+
+}
+
+.checkListBtns {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+}
+
+.listBtn {
+  border: 1px solid black;
+  color: white;
+  width: 120px;
+  height: 35px;
+  margin: 0;
+  background-color: black;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  transition: 0.25s;
+}
+
+.listBtn:hover {
+  background-color: rgb(48, 48, 48);
+  transition: 0.25s;
+}
+
+@media (max-width: 691px) {
+  .listBtn {
+    width: 80px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .checkListName {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 550px) {
+  .main {
+    row-gap: 0;
+  }
+
+  .checkList {
+    column-gap: 20px;
+  }
+
+  .checkList:last-child {
+    margin: 20px 0 0;
+  }
+}
+
+@media (max-width: 444px) {
+  .checkListName {
+    font-size: 14px;
+  }
+
+  .checkListPriceFive {
+    font-size: 14px;
+  }
+
+  .listBtn {
+    font-size: 12px;
+  }
+}

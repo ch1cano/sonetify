@@ -1,0 +1,198 @@
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  width: 100%;
+  margin: 30px 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  max-width: 750px;
+  height: 500px;
+  margin: 44px 0 0;
+  object-fit: cover;
+}
+
+.contentСontainer {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  object-fit: cover;
+  max-width: 900px;
+  height: 700px;
+  object-position: -350px -10px;
+}
+
+.description {
+  max-width: 750px;
+  margin: 80px 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.buttonContainer {
+  position: relative;
+  margin: 180px auto 40px;
+}
+
+.oldPrice {
+  position: absolute;
+  right: -40px;
+  top: -25px;
+  text-align: end;
+  font-size: xx-large;
+  font-weight: 200;
+  transform: rotate(20deg);
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+.button {
+  color: white;
+  width: 310px;
+  height: 100px;
+  margin: 0;
+  padding: 0 30px;
+  background-color: black;
+  text-align: center;
+  border-radius: 50px;
+  font-size: xx-large;
+  font-weight: 300;
+  transition: 0.25s;
+}
+
+.button:hover {
+  background-color: rgb(48, 48, 48);
+  transition: 0.25s;
+}
+
+@media (max-width: 1658px) {
+  .image {
+    height: 400px;
+  }
+
+  .logo {
+    max-width: 700px;
+    height: 500px;
+    object-position: -210px 50px;
+  }
+
+  .description {
+    max-width: 650px;
+    margin-top: 150px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .image {
+    max-width: 600px;
+    height: 300px;
+  }
+
+  .contentСontainer {
+    top: 90px;
+    justify-content: center;
+    column-gap: 100px;
+  }
+
+  .logo {
+    max-width: 500px;
+    height: 400px;
+    object-position: -215px 50px;
+  }
+
+  .description {
+    max-width: 476px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 997px) {
+  .contentСontainer {
+    position: relative;
+    top: -130px;
+    flex-direction: column;
+  }
+
+  .logo {
+    height: 400px;
+    object-position: -200px -20px;
+    transform: rotate(17deg);
+  }
+
+  .description {
+    position: absolute;
+    top: 330px;
+    margin-top: 0;
+    max-width: 320px;
+  }
+
+  .buttonContainer {
+    margin-top: 130px;
+  }
+}
+
+@media (max-width: 605px) {
+  .image {
+    width: 100%;
+  }
+
+  .contentСontainer {
+    top: -105px;
+  }
+
+  .logo {
+    height: 300px;
+    max-width: 350px;
+    object-position: -174px 0;
+  }
+
+  .description {
+    top: 270px;
+    max-width: 292px;
+    font-size: 20px;
+  }
+
+  .oldPrice {
+    top: -25px;
+    right: -28px;
+    font-size: 27px;
+  }
+
+  .button {
+    width: 230px;
+    height: 90px;
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 428px) {
+  .logo {
+    height: 255px;
+    max-width: 300px;
+    object-position: -145px 10px;
+  }
+
+  .description {
+    top: 250px;
+    font-size: 18px;
+    max-width: 250px;
+  }
+}

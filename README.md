@@ -1,0 +1,1 @@
+NextJS, ReactJS, TypeScript, SCSS, Redux Toolkit, TailwindCSS, Styled Components

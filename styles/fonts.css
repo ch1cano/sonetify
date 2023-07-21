@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "firs";
+  src: url('../fonts/TTFirsNeue-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "firs";
+  src: url('../fonts/TTFirsNeue-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "firs";
+  src: url('../fonts/TTFirsNeue-ExtraBold.ttf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "anonymous";
+  src: url('../fonts/AnonymousPro-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "anonymous";
+  src: url('../fonts/AnonymousPro-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "intro";
+  src: url('../fonts/IntroDemo-BlackCAPS.otf');
+  font-weight: 700;
+}
+
+
+.firs {
+  font-family: "firs", Arial, Helvetica, sans-serif;
+}
+
+.anonymous {
+  font-family: "anonymous", Arial, Helvetica, sans-serif;
+}
+
+.intro {
+  font-family: "intro", Arial, Helvetica, sans-serif;
+}

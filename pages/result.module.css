@@ -1,0 +1,45 @@
+.pokinyt {
+    position: absolute;
+    opacity: 0.1;
+    font-size: 6rem;
+    padding-top: 20px;
+    right: -50%; 
+}
+
+@media (max-width:900px) {
+    .pokinyt {
+        font-size: 4rem;
+        right: -13%;
+    }
+}
+    
+@media (max-width:575px) {
+    .pokinyt {
+        font-size: 2.5rem;
+        right: 5%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1023px) {
+    .image {
+      position: static;
+      max-width: 150px;
+      max-height: 230px;
+    }
+  
+    .imageContainer {
+      position: static;
+    }
+  }
+  
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .paragraph {
+    max-width: 600px;
+  }
+  

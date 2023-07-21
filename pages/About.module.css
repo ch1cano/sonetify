@@ -1,0 +1,172 @@
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+}
+.photo__block{
+position: relative;
+
+}
+.text__who__am__i_mobile{
+  display: none;
+}
+/* .aboutPhoto{
+ 
+} */
+.img__text{
+  color: #fff;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+.text__block{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.text__block h1{
+  opacity: 0.1;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+.text__about{
+  margin-top: 75px;
+}
+.text__education{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.text__education strong {
+  font-size: 1.4rem;
+}
+.text__education p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-right: 50px;
+}
+.text__telegram{
+  margin-top: 75px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.text__telegram strong {
+  font-size: 1.4rem;
+} 
+.text__telegram a {
+  transition: 0.3s;
+  font-size: 22px;
+}
+.text__telegram a:hover{
+  color: rgb(226, 226, 226);
+}
+.text__telegram p{
+  margin-left: 75px;
+}
+.text__who__am__i{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  opacity: 0.1;
+  text-align: center;
+  margin-top: 70px;
+}
+@media (max-width:2560px){
+  .wrapper{
+    justify-content: space-around;
+  }
+}
+@media (max-width:1368px){
+ 
+  .text__block{
+    font-size: 1.4rem;
+    width: 39%;
+  }
+  .text__block h1{
+    font-size: 4rem;
+  }
+  .text__telegram{
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1024px){
+  .wrapper{
+    justify-content: center;
+  }
+  .photo__block{
+    position: relative;
+    margin: 0 auto; 
+  }
+  .text__who__am__i{
+    display: none;
+  }
+  .text__who__am__i_mobile{
+    display: block;
+    text-align: center;
+    width: 160px;
+    z-index: 99;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+  }
+  .text__who__am__i_mobile p{
+    opacity: 0.4;
+   font-size: 2.5vw;
+   text-transform: uppercase;
+   font-weight: 600;
+  }
+  /* .aboutPhoto{
+    
+  } */
+  .text__block{
+    justify-content: center;
+    align-items: center;
+  }
+  .text__education{
+    width: 300px;
+  }
+  .text__education strong{
+    margin-left: -30px;
+  }
+  .text__telegram strong{
+    margin-left: -30px;
+  }
+  .text__education p{
+    width: 315px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+.img__text{
+  right: 15px;
+  bottom: 15px;
+}
+  .text__who__am__i p{
+    font-size: 1rem;
+  }
+
+}
+@media (max-width: 768px){
+  .text__who__am__i_mobile p{
+    font-size: 3vw;
+    font-weight: 600;
+   }
+   .text__who__am__i_mobile{
+    text-align: center;
+    width: 135px;
+    z-index: 100;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+  }
+}
