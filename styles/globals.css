@@ -94,7 +94,9 @@ a {
 		display: none;
 	}
 	.nav__menu-list {
-		position: unset;
+		position: absolute;
+		top: 0;
+		right: 1rem;
 		flex-direction: row;
 		min-height: fit-content;
 		width: fit-content;
