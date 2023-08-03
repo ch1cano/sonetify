@@ -104,7 +104,7 @@ a {
 	}
 }
 
-.nav__menu-bar.active div:nth-child(2) {
+/* .nav__menu-bar.active div:nth-child(2) {
 	transform: scale(0);
 	opacity: 0;
 }
@@ -163,7 +163,7 @@ a {
 	100% {
 		transform: translateY(0px);
 	}
-}
+} */
 
 .nav__menu-bar.no-animation div {
 	animation: none;
