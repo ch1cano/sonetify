@@ -47,12 +47,12 @@ a {
 	row-gap: 6px;
 	cursor: pointer;
 	padding: 25px 10px 10px 10px;
-	/* background-color: black;
+	background-color: black;
 	width: 288px;
 	right: 0px;
 	position: fixed;
 	margin-top: -25px;
-	padding-bottom: 27px; */
+	padding-bottom: 27px;
 }
 
 .small {
