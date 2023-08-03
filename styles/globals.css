@@ -87,10 +87,9 @@ a {
 .nav__menu-list.active {
 	right: 0;
 	background-color: #fff;
-	
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 768px) {
 	.nav__menu-bar {
 		display: none;
 	}
@@ -180,7 +179,7 @@ a {
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 	body::before {
 		content: "";
 		position: absolute;
