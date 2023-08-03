@@ -40,11 +40,8 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
             `}
         </style>
       </Head>
-      <Provider store={store}>
-        {isPc
-          ? <Header />
-          : ''
-        }
+      <Provider store={store}> 
+         <Header />
         <Component {...pageProps} />
       </Provider>
     </>
