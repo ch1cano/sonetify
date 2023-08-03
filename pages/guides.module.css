@@ -299,6 +299,7 @@
 }
 
 .isMobile {
+	font-family: "firs", Arial, Helvetica, sans-serif;
 	display: flex;
 	text-align: center;
 	flex-direction: column;
@@ -310,6 +311,7 @@
 	/* padding-top: 150px; */
 	font-size: 34px;
 	font-weight: 700;
+	font-family: "anonymous", Arial, Helvetica, sans-serif;
 }
 
 .mobdobro {

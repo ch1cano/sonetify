@@ -11,45 +11,6 @@ const AboutPage: FC = () => {
         <title>Обо мне</title>
       </Head>
       <main className="w-full h-full d-flex">
-        {/* <div className={s.wrapper}>
-          <div className={s.block}>
-            <div className={s.bgPhoto}>
-              <Image src={aboutPhoto} className={s.aboutPhoto} alt="SONETIFY" />
-              <p className={s.bunerRightDownPhoto}>
-                <strong>РЕПРИНЕЦ СОФИЯ</strong>
-              </p>
-            </div>
-
-            <div className={s.text}>
-              <div className={s.textBuner}>
-                <strong>SONETIFY</strong>
-              </div>
-              <h1 className={s.headName}>
-                <strong>ОБРАЗОВАНИЕ</strong>
-              </h1>
-              <p className={s.headDesc}>
-                ПРЕЗИДЕНТСКАЯ АКАДЕМИЯ РАНХИГС
-                <br />
-                ФАКУЛЬТЕТ: ПСИХОЛОГИЧЕСКОЕ КОНСУЛЬТИРОВАНИЕ И КОУЧИНГ
-              </p>
-              <h1 className={s.tg}>
-                <strong>TELEGRAM</strong>
-              </h1>
-              <div className={s.tags}>
-                <a href="https://t.me/sonetify" target="blank">
-                  @SONETIFY
-                </a>
-              </div>
-              <p className={s.bunerLeftUpPhoto}>
-                <strong>
-                  ВАШ ПСИХОЛОГ
-                  <br /> ДРУГ <br /> СОВЕТНИК
-                  <br />И ПРЕДАННЫЙ СЛУШАТЕЛЬ
-                </strong>
-              </p>
-            </div>
-          </div>
-        </div> */}
         <div className={s.wrapper}>
           <div className={s.photo__block}>
             <Image

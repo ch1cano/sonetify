@@ -35,6 +35,7 @@
   z-index: 2;
   font-size: 90px;
   font-weight: 800;
+  /* font-family: "anonymous", Arial, Helvetica, sans-serif; */
 }
 
 @media (max-width: 1024px) {
@@ -106,6 +107,7 @@
   font-size: 24px;
   font-weight: 700;
   flex-wrap: wrap;
+  font-family: "anonymous", Arial, Helvetica, sans-serif;
 }
 
 .checkListPrice {
@@ -133,7 +135,7 @@
   text-decoration-color: red;
   color: rgb(134, 86, 32);
   opacity: 0.5;
-
+  font-family: "anonymous", Arial, Helvetica, sans-serif;
 }
 
 .checkListBtns {
@@ -142,6 +144,7 @@
   align-items: center;
   justify-content: center;
   z-index: 9;
+  font-family: "firs", Arial, Helvetica, sans-serif;
 }
 
 .listBtn {
@@ -191,11 +194,11 @@
 
 @media (max-width: 444px) {
   .checkListName {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .checkListPriceFive {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .listBtn {

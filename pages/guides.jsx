@@ -33,7 +33,7 @@ const GuidesPage = () => {
 							</h2>
 						</div>
 						<div
-							className={`${s.paragraph} w-[100%] anonymous text-center tracking-[1px] text-[1.3rem]`}>
+							className={`${s.paragraph} w-[100%] firs text-center tracking-[1px] text-[1.3rem]`}>
 							<p>
 								БОЛЬШИНСТВО ТРАВМ МЫ ПОЛУЧАЕМ В ДЕТСКОМ ВОЗРАСТЕ, ИМЕННО ПОЭТОМУ
 								ПРИЧИНОЙ ТРАВМЫ МОГУТ СТАТЬ НЕЗНАЧИТЕЛЬНЫЕ ВЕЩИ. К ПРИМЕРУ,

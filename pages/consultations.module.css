@@ -44,6 +44,8 @@
   font-size: 32px;
   font-weight: 700;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  font-family: "anonymous", Arial, Helvetica, sans-serif;
+  /* font-family: "firs", Arial, Helvetica, sans-serif; */
 }
 
 .buttonContainer {
@@ -61,6 +63,7 @@
   transform: rotate(20deg);
   text-decoration: line-through;
   text-decoration-color: red;
+  font-family: "anonymous", Arial, Helvetica, sans-serif;
 }
 
 .button {
@@ -75,6 +78,7 @@
   font-size: xx-large;
   font-weight: 300;
   transition: 0.25s;
+  font-family: "firs", Arial, Helvetica, sans-serif;
 }
 
 .button:hover {
