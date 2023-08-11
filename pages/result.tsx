@@ -115,7 +115,7 @@ const ResultPage: FC = () => {
               {resultInfoByName?.title.toUpperCase()}
             </h2>
           </div>
-          <p className="firs text-[1.2rem] mt-[50px] max-w-[45%] leading-[1.8rem] text-center w-full">
+          <p className="firs text-[1.2rem] mt-[200px] max-w-[45%] leading-[1.8rem] text-center w-full">
             {resultInfoByName?.description}
           </p>
           <Link href={"/checklist"}>
