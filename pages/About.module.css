@@ -31,12 +31,12 @@ position: relative;
 }
 .text__block h1{
   opacity: 0.1;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 5px;
   text-align: center;
   font-size: 7rem;
   text-transform: uppercase;
-  font-family: "anonymous", Arial, Helvetica, sans-serif;
+  font-family: "firs", Arial, Helvetica, sans-serif;
 }
 .text__about{
   margin-top: 75px;

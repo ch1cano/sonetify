@@ -102,7 +102,7 @@ const ResultPage: FC = () => {
             <h1 style={{padding: 20, }} className={`${testResultName === 'несправедливость'}`}>
               <div className={s.pokinyt}>{testResultName.toUpperCase()}</div>
             </h1>
-            <h2 className="title-secondary inset-0 m-auto">
+            <h2 className="absolute top-full title-secondary inset-0 m-auto">
               {['несправедливость', 'предательство'].includes(testResultName)
                 ? <Image
                   className="inset-0 m-auto h-[50px] w-[50px]]"
@@ -115,7 +115,7 @@ const ResultPage: FC = () => {
               {resultInfoByName?.title.toUpperCase()}
             </h2>
           </div>
-          <p className="firs text-[1.2rem] mt-[200px] max-w-[45%] leading-[1.8rem] text-center w-full">
+          <p className="firs text-[1.2rem] mt-[100px] max-w-[45%] leading-[1.8rem] text-center w-full">
             {resultInfoByName?.description}
           </p>
           <Link href={"/checklist"}>
