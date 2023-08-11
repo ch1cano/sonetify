@@ -146,7 +146,6 @@
 		position: absolute;
 		top: 330px;
 		margin-top: 0;
-		max-width: 320px;
 	}
 
 	.buttonContainer {
@@ -171,7 +170,6 @@
 
 	.description {
 		top: 270px;
-		max-width: 292px;
 		font-size: 20px;
 	}
 
@@ -198,6 +196,5 @@
 	.description {
 		top: 250px;
 		font-size: 18px;
-		max-width: 250px;
 	}
 }
