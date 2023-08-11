@@ -97,7 +97,7 @@ const ResultPage: FC = () => {
         <title>{resultInfoByName?.title}</title>
       </Head>
       {isPc
-        ? <main className="flex w-full h-full flex-col justify-start items-center">
+        ? <main className="flex w-full h-full flex-col justify-start items-center text-center">
           <div className="relative h-[100px] mt-[90px] intro">
             <h1 style={{padding: 20, }} className={`${testResultName === 'несправедливость'}`}>
               <div className={s.pokinyt}>{testResultName.toUpperCase()}</div>
@@ -105,7 +105,7 @@ const ResultPage: FC = () => {
             <h2 className="title-secondary inset-0 m-auto">
               {['несправедливость', 'предательство'].includes(testResultName)
                 ? <Image
-                  className="inset-0 m-auto h-[100px] w-auto"
+                  className="inset-0 m-auto h-[50px] w-[50px]]"
                   src={testResultName === 'предательство'
                     ? groupOfPeople
                     : fingerTransparent}
@@ -129,22 +129,22 @@ const ResultPage: FC = () => {
               <Image
                 src={hand}
                 alt="Hand image"
-                className={`${s.image}absolute top-[700px] right-[0px] w-[180px] h-auto rotate-[-55deg]`}
+                className={"absolute top-[700px] right-[0px] w-[70px] h-auto rotate-[-55deg]"}
               />
               <Image
                 src={hand}
                 alt="Hand image"
-                className={`${s.image}absolute top-[230px] right-[0px] w-[180px] h-auto rotate-[-115deg]`}
+                className={"absolute top-[230px] right-[5px] w-[70px] h-auto rotate-[-115deg]"}
               />
               <Image
                 src={hand}
                 alt="Hand image"
-                className={`${s.image}absolute top-[230px] left-[0px] w-[180px] h-auto scale-x-[-1] rotate-[115deg]`}
+                className={"absolute top-[230px] left-[3px] w-[70px] h-auto scale-x-[-1] rotate-[115deg]"}
               />
               <Image
                 src={hand}
                 alt="Hand image"
-                className={`${s.image}absolute top-[700px] left-[0px] w-[180px] h-auto scale-x-[-1] rotate-[55deg]`}
+                className={"absolute top-[700px] left-[0px] w-[70px] h-auto scale-x-[-1] rotate-[55deg]"}
               />
             </div>
             : ''}
@@ -160,7 +160,7 @@ const ResultPage: FC = () => {
           <div className='flex flex-col justify-center items-center'>
             <Image
               priority
-              className="w-auto h-[500px] sm:h-[500px]"
+              className="w-auto h-[300px] sm:h-[500px]"
               alt="result image"
               src={resultInfoByName?.src ?? girl}
             />
