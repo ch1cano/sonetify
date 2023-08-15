@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: "firs";
+}
+.oferta_up {
+    text-align: center;
+}
+
+.prDogovora {
+    text-align: center;
+}
+
+

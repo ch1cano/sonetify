@@ -3,6 +3,7 @@ import { FC } from "react";
 import s from "./About.module.css";
 import aboutPhoto from "../assets/landingPhoto/aboutPhoto.jpg";
 import Image from "next/image";
+import Footer from "@/features/Footer/Footer";
 
 const AboutPage: FC = () => {
   return (
@@ -59,6 +60,7 @@ const AboutPage: FC = () => {
             </div>
           </div>
         </div>
+      
       </main>
     </>
   );

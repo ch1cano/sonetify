@@ -11,6 +11,8 @@ import puzzle5 from '@/assets/puzzles/униженность.png';
 import s from './checklist.module.css';
 import Link from 'next/link';
 
+import Footer from "@/features/Footer/Footer";
+
 const CheckList = () => {
   const checkListData = [
     {
@@ -95,6 +97,9 @@ const CheckList = () => {
         })}
         {/* <p className={s.oldPrice}>399$</p> */}
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

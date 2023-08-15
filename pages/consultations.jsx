@@ -5,6 +5,8 @@ import consultationsPhoto from "@/assets/landingPhoto/consulationsPhoto.png";
 import logo from "@/assets/landingPhoto/logo.png";
 import Link from "next/link";
 
+import Footer from "@/features/Footer/Footer";
+
 const ConsultationsPage = () => {
 	return (
 		<>
@@ -35,6 +37,9 @@ const ConsultationsPage = () => {
 					</div>
 				</section>
 			</main>
+			<footer>
+				<Footer />
+			</footer>
 		</>
 	);
 };

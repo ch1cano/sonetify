@@ -5,6 +5,7 @@ import s from "./styles.module.css";
 import logo from "@/assets/logo.png";
 import { useIsPc } from "@/hooks/useIsPc";
 import { isMobile } from "react-device-detect";
+import Footer from "@/features/Footer/Footer";
 
 const HomePage: FC = () => {
 	// const isPc = useIsPc();
@@ -26,7 +27,11 @@ const HomePage: FC = () => {
 				</div>
 
 				<Image src={logo} alt="Logo image" className={s.mainWrapperImg} />
+				
 			</main>
+			<footer>
+				<Footer/>
+				</footer>
 		</>
 	);
 };
