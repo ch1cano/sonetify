@@ -252,7 +252,7 @@ const ResultPage: FC = () => {
 							</p>
 						</h2>
 					</div>
-					<p className="w-[70%] text-[0.5rem] text-center">
+					<p className="w-[50%] text-[0.5rem] text-center">
 						{resultInfoByName?.description}
 					</p>
 					<Link href={"/checklist"}>
