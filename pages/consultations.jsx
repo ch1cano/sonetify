@@ -29,11 +29,12 @@ const ConsultationsPage = () => {
 					</div>
 					<div className={s.buttonContainer}>
 						<p className={s.oldPrice}>399$</p>
-						<Link href="/form/form">
+
+						<a href="https://t.me/sonetify" target="blank">
 							<button className={s.button} type="button">
 								записаться за 199$
 							</button>
-						</Link>
+						</a>
 					</div>
 				</section>
 			</main>

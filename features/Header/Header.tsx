@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { FC } from "react";
-import {useState} from "react"
+import { useState } from "react";
 
 import Navbar from "./Navbar/Navbar";
 import { NavbarLinkProps } from "./Navbar/NavbarLink/models";
@@ -19,7 +19,7 @@ const links: NavbarLinkProps[] = [
 	},
 	{
 		href: "/guides",
-		text: "ГАЙДЫ",
+		text: "ТЕСТ",
 	},
 	{
 		href: "/consultations",
@@ -30,8 +30,6 @@ const links: NavbarLinkProps[] = [
 		text: "ЧЕК-ЛИСТ",
 	},
 ];
-
-
 
 const Header: FC = () => {
 	return (

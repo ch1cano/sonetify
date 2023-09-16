@@ -8,8 +8,8 @@ import Image from "next/image";
 import logoImage from "@/assets/logo.png";
 
 const Navbar: FC<NavbarProps> = ({ links }) => {
-	const [navActive, setNavActive] = useState(true);
 	const { setSelectedLink } = useSelectedLink();
+	const [navActive, setNavActive] = useState(false);
 	const router = useRouter();
 	useEffect(() => {
 		setSelectedLink(router.asPath);
@@ -23,12 +23,12 @@ const Navbar: FC<NavbarProps> = ({ links }) => {
 		}
 	}, []);
 
-	const togleNavBar = () => setNavActive((prev) => !prev)
+	const togleNavBar = () => setNavActive((prev) => !prev);
 
 	return (
 		<nav className="nav">
 			<div
-				onClick={() => setNavActive(prev=>!prev)}
+				onClick={() => setNavActive((prev) => !prev)}
 				className="nav__menu-bar z-100">
 				<div className="small"></div>
 				<div className="big"></div>

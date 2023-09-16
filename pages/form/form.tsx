@@ -53,6 +53,8 @@ const Form = () => {
 						инсайтов уже спешит к вам!{" "}
 					</p>
 				</div>
+				<div className={s.inputName}>Имя:</div>
+				<input className={s.email} type="name" />
 				<div className={s.inputName}>Email:</div>
 				<input
 					className={s.email}
