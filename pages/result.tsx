@@ -198,28 +198,28 @@ const ResultPage: FC = () => {
 								src={hand}
 								alt="Hand image"
 								className={
-									"absolute top-[700px] right-[0px] w-[70px] h-auto rotate-[-55deg]"
+									"absolute top-[700px] right-[0px] h-[30px] w-[30px] h-auto rotate-[-55deg]"
 								}
 							/>
 							<Image
 								src={hand}
 								alt="Hand image"
 								className={
-									"absolute top-[230px] right-[5px] w-[70px] h-auto rotate-[-115deg]"
+									"absolute top-[230px] right-[5px] h-[30px] w-[30px] h-auto rotate-[-115deg]"
 								}
 							/>
 							<Image
 								src={hand}
 								alt="Hand image"
 								className={
-									"absolute top-[230px] left-[3px] w-[70px] h-auto scale-x-[-1] rotate-[115deg]"
+									"absolute top-[230px] left-[3px] h-[30px] w-[30px] h-auto scale-x-[-1] rotate-[115deg]"
 								}
 							/>
 							<Image
 								src={hand}
 								alt="Hand image"
 								className={
-									"absolute top-[700px] left-[0px] w-[70px] h-auto scale-x-[-1] rotate-[55deg]"
+									"absolute top-[700px] left-[0px] h-[30px] w-[30px] h-auto scale-x-[-1] rotate-[55deg]"
 								}
 							/>
 						</div>
@@ -228,7 +228,7 @@ const ResultPage: FC = () => {
 					)}
 					{["покинутость", "отвергнутость"].includes(testResultName) ? (
 						<Image
-							className="absolute right-[200px] bottom-[00px]"
+							className="absolute right-[200px] h-[30px] w-[30px] bottom-[00px]"
 							src={resultInfoByName?.src ?? ""}
 							alt="Result image"
 						/>
