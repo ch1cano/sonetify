@@ -170,7 +170,7 @@ const ResultPage: FC = () => {
 								testResultName
 							) ? (
 								<Image
-									className="inset-0 m-auto h-[50px] w-[50px]]"
+									className="inset-0 m-auto h-[40px] w-[40px]]"
 									src={
 										testResultName === "предательство"
 											? groupOfPeople
@@ -198,28 +198,28 @@ const ResultPage: FC = () => {
 								src={hand}
 								alt="Hand image"
 								className={
-									"absolute top-[700px] right-[0px] h-[50px] w-[50px] h-auto rotate-[-55deg]"
+									"absolute top-[700px] right-[0px] h-[40px] w-[40px] h-auto rotate-[-55deg]"
 								}
 							/>
 							<Image
 								src={hand}
 								alt="Hand image"
 								className={
-									"absolute top-[230px] right-[5px] h-[50px] w-[50px] h-auto rotate-[-115deg]"
+									"absolute top-[230px] right-[5px] h-[40px] w-[40px] h-auto rotate-[-115deg]"
 								}
 							/>
 							<Image
 								src={hand}
 								alt="Hand image"
 								className={
-									"absolute top-[230px] left-[3px] h-[50px] w-[50px] h-auto scale-x-[-1] rotate-[115deg]"
+									"absolute top-[230px] left-[3px] h-[40px] w-[40px] h-auto scale-x-[-1] rotate-[115deg]"
 								}
 							/>
 							<Image
 								src={hand}
 								alt="Hand image"
 								className={
-									"absolute top-[700px] left-[0px] h-[50px] w-[50px] h-auto scale-x-[-1] rotate-[55deg]"
+									"absolute top-[700px] left-[0px] h-[40px] w-[40px] h-auto scale-x-[-1] rotate-[55deg]"
 								}
 							/>
 						</div>
@@ -228,7 +228,7 @@ const ResultPage: FC = () => {
 					)}
 					{["покинутость", "отвергнутость"].includes(testResultName) ? (
 						<Image
-							className="absolute right-[200px]  h-[50px] w-[50px] bottom-[00px]"
+							className="absolute right-[200px]  h-[40px] w-[40px] bottom-[00px]"
 							src={resultInfoByName?.src ?? ""}
 							alt="Result image"
 						/>
