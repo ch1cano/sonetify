@@ -54,11 +54,7 @@ const Form = () => {
 					</p>
 				</div>
 				<div className={s.inputName}>Имя:</div>
-				<input
-					className={s.email}
-					type="name"
-					{...register("name", { required: true })}
-				/>
+
 				<div className={s.inputName}>Email:</div>
 				<input
 					className={s.email}
