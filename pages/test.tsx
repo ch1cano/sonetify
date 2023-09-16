@@ -117,7 +117,7 @@ const TestPage: FC = () => {
 					className={`${s.ques} text-brown text-[1.7rem] w-full text-center text-yellow-600 opacity-50`}>
 					{currentQuestion}
 				</span>
-				<div>
+				<div className="flex flex-col gap-[45px] mt-[28px]">
 					<button
 						onClick={() => {
 							Object.keys(topicQuestions).forEach((key) => {
