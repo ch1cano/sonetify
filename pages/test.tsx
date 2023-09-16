@@ -105,11 +105,11 @@ const TestPage: FC = () => {
 			<main className="w-full h-full flex flex-col intro justify-center items-center gap-4 mb-10">
 				<div className="w-full h-full relative m-auto flex flex-col mt-[170px] content-center items-center w-70 h-10 mb-40">
 					<h2
-						className={`${s.testh2} text-center my-14 absolute content-center items-center`}>
+						className={s.testh2 + "text-center my-14 absolute content-center items-center"}>
 						НА ОПРЕДЕЛЕНИЕ ВАШЕЙ ТРАВМЫ
 					</h2>
 					<h1
-						className={`${s.test} title-main m-auto top-0 opacity-10 tracking-widest`}>
+						className={s.test + " title-main m-auto top-0 opacity-10 tracking-widest"}>
 						ТЕСТ
 					</h1>
 				</div>
@@ -132,7 +132,7 @@ const TestPage: FC = () => {
 								return;
 							}
 						}}
-						className={`${s.yesno} px-10 py-4 w-[150px] rounded-[10px] bg-gray border-2 bg-gray-200`}>
+						className={s.yesno + " px-10 py-4 w-[150px] rounded-[10px] bg-gray border-2 bg-gray-200"}>
 						ДА
 					</button>
 					<button
@@ -143,7 +143,7 @@ const TestPage: FC = () => {
 								return;
 							}
 						}}
-						className={`${s.yesno} px-10 py-4 w-[150px] rounded-[10px] bg-gray border-1 bg-gray-200`}>
+						className={s.yesno + " px-10 py-4 w-[150px] rounded-[10px] bg-gray border-1 bg-gray-200"}>
 						НЕТ
 					</button>
 				</div>
