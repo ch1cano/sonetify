@@ -241,7 +241,7 @@ const ResultPage: FC = () => {
 					<div className="flex flex-col justify-center items-center">
 						<Image
 							priority
-							className="w-[50px] h-[50px] "
+							className="w-[150px] h-[150px] "
 							alt="result image"
 							src={resultInfoByName?.src ?? girl}
 						/>
