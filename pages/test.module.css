@@ -20,6 +20,8 @@
 .ques {
 	font-size: 1.7rem;
 	min-height: 130px;
+	max-height: 900px;
+	height: 100%;
 }
 
 @media (max-width: 486px) {
