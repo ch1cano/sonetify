@@ -170,7 +170,7 @@ const ResultPage: FC = () => {
 								testResultName
 							) ? (
 								<Image
-									className="inset-0 m-auto h-[30px] w-[30px]]"
+									className="inset-0 m-auto h-[10px] w-[10px]]"
 									src={
 										testResultName === "предательство"
 											? groupOfPeople
@@ -184,7 +184,7 @@ const ResultPage: FC = () => {
 							{resultInfoByName?.title.toUpperCase()}
 						</h2>
 					</div>
-					<p className="firs text-[1.2rem] mt-[100px] max-w-[45%] leading-[1.8rem] text-center w-full">
+					<p className="firs text-[1.2rem] mt-[100px] w-[45%] leading-[1.8rem] text-center w-full">
 						{resultInfoByName?.description}
 					</p>
 					<Link href={"/checklist"}>
@@ -228,7 +228,7 @@ const ResultPage: FC = () => {
 					)}
 					{["покинутость", "отвергнутость"].includes(testResultName) ? (
 						<Image
-							className="absolute right-[200px] h-[30px] w-[30px] bottom-[00px]"
+							className="absolute right-[200px]  h-[10px] w-[10px] bottom-[00px]"
 							src={resultInfoByName?.src ?? ""}
 							alt="Result image"
 						/>
@@ -241,7 +241,7 @@ const ResultPage: FC = () => {
 					<div className="flex flex-col justify-center items-center">
 						<Image
 							priority
-							className="w-auto h-[300px] sm:h-[500px]"
+							className="w-auto h-[50px] sm:h-[60px]"
 							alt="result image"
 							src={resultInfoByName?.src ?? girl}
 						/>
