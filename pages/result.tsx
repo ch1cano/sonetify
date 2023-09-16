@@ -246,13 +246,13 @@ const ResultPage: FC = () => {
 							src={resultInfoByName?.src ?? girl}
 						/>
 						<h2
-							className={`font-bold text-2rem flex flex-col justify-center items-center intro`}>
+							className={`font-bold px-[20px] text-2rem flex flex-col justify-center items-center intro`}>
 							<p className="bg-[#fbff00] p-1 rounded-[8px] shadow-md">
 								{resultInfoByName?.title}
 							</p>
 						</h2>
 					</div>
-					<p className="w-[90%] text-[0.6rem] text-center">
+					<p className="w-[70%] text-[0.5rem] text-center">
 						{resultInfoByName?.description}
 					</p>
 					<Link href={"/checklist"}>
