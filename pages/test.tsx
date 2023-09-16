@@ -98,8 +98,9 @@ const TestPage: FC = () => {
 	const router = useRouter();
 	const testResult = useTestResult();
 	useEffect(() => {
+		const shuffledQuestions = allQuestions.sort((a, b) => 0.5 - Math.random());
 		setCurrentQuestion(shuffledQuestions[currentQuestionIndex]);
-	}, [currentQuestionIndex]);
+	  }, [currentQuestionIndex]);
 	return (
 		<>
 			<main className="w-full h-full flex flex-col intro justify-center items-center gap-4 mb-10">
