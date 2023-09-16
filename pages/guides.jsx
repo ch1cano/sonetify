@@ -97,27 +97,27 @@ const GuidesPage = () => {
 						<Image
 							src={puzzle1}
 							alt={"Несправедливость"}
-							className={`${s.puzzle1} w-[450px] h-auto absolute top-[220px] z-[-1] right-[-150px] rotate-[-30deg]`}
+							className={`${s.puzzle1} w-[350px] h-auto absolute top-[220px] z-[-1] right-[-150px] rotate-[-30deg]`}
 						/>
 						<Image
 							src={puzzle2}
 							alt={"Отвергнутость"}
-							className={`${s.puzzle2} w-[450px] h-auto absolute top-[454px] left-[-125px]`}
+							className={`${s.puzzle2} w-[350px] h-auto absolute top-[454px] left-[-125px]`}
 						/>
 						<Image
 							src={puzzle3}
 							alt={"Покинутость"}
-							className={`${s.puzzle3} w-[450px] h-auto absolute bottom-[-140px] left-[70px]`}
+							className={`${s.puzzle3} w-[350px] h-auto absolute bottom-[-140px] left-[70px]`}
 						/>
 						<Image
 							src={puzzle4}
 							alt={"Предательство"}
-							className={`${s.puzzle4} w-[450px] h-auto absolute left-[-97px] top-[140px] z-[-2] rotate-[15deg]`}
+							className={`${s.puzzle4} w-[350px] h-auto absolute left-[-97px] top-[140px] z-[-2] rotate-[15deg]`}
 						/>
 						<Image
 							src={puzzle5}
 							alt={"Униженность"}
-							className={`${s.puzzle5} w-[450px] h-auto absolute bottom-[-70px] right-[-70px] rotate-[25deg]`}
+							className={`${s.puzzle5} w-[350px] h-auto absolute bottom-[-70px] right-[-70px] rotate-[25deg]`}
 						/>
 					</div>
 				</>
