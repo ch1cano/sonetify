@@ -170,7 +170,7 @@ const ResultPage: FC = () => {
 								testResultName
 							) ? (
 								<Image
-									className="inset-0 m-auto h-[10px] w-[10px]]"
+									className="inset-0 m-auto h-[30px] w-[30px]]"
 									src={
 										testResultName === "предательство"
 											? groupOfPeople
@@ -228,7 +228,7 @@ const ResultPage: FC = () => {
 					)}
 					{["покинутость", "отвергнутость"].includes(testResultName) ? (
 						<Image
-							className="absolute right-[200px]  h-[10px] w-[10px] bottom-[00px]"
+							className="absolute right-[200px]  h-[30px] w-[30px] bottom-[00px]"
 							src={resultInfoByName?.src ?? ""}
 							alt="Result image"
 						/>
