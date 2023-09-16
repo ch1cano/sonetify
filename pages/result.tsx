@@ -170,7 +170,7 @@ const ResultPage: FC = () => {
 								testResultName
 							) ? (
 								<Image
-									className="inset-0 m-auto h-[35px] w-[35px]]"
+									className="inset-0 m-auto h-[50px] w-[50px]]"
 									src={
 										testResultName === "предательство"
 											? groupOfPeople
@@ -184,7 +184,7 @@ const ResultPage: FC = () => {
 							{resultInfoByName?.title.toUpperCase()}
 						</h2>
 					</div>
-					<p className="firs text-[1.2rem] mt-[100px] w-[45%] leading-[1.8rem] text-center w-full">
+					<p className="firs text-[1.2rem] mt-[100px] max-w-[45%] leading-[1.8rem] text-center w-full">
 						{resultInfoByName?.description}
 					</p>
 					<Link href={"/checklist"}>
@@ -198,28 +198,28 @@ const ResultPage: FC = () => {
 								src={hand}
 								alt="Hand image"
 								className={
-									"absolute top-[700px] right-[0px] h-[40px] w-[40px] h-auto rotate-[-55deg]"
+									"absolute top-[700px] right-[0px] w-[70px] h-auto rotate-[-55deg]"
 								}
 							/>
 							<Image
 								src={hand}
 								alt="Hand image"
 								className={
-									"absolute top-[230px] right-[5px] h-[40px] w-[40px] h-auto rotate-[-115deg]"
+									"absolute top-[230px] right-[5px] w-[70px] h-auto rotate-[-115deg]"
 								}
 							/>
 							<Image
 								src={hand}
 								alt="Hand image"
 								className={
-									"absolute top-[230px] left-[3px] h-[40px] w-[40px] h-auto scale-x-[-1] rotate-[115deg]"
+									"absolute top-[230px] left-[3px] w-[70px] h-auto scale-x-[-1] rotate-[115deg]"
 								}
 							/>
 							<Image
 								src={hand}
 								alt="Hand image"
 								className={
-									"absolute top-[700px] left-[0px] h-[40px] w-[40px] h-auto scale-x-[-1] rotate-[55deg]"
+									"absolute top-[700px] left-[0px] w-[70px] h-auto scale-x-[-1] rotate-[55deg]"
 								}
 							/>
 						</div>
@@ -228,7 +228,7 @@ const ResultPage: FC = () => {
 					)}
 					{["покинутость", "отвергнутость"].includes(testResultName) ? (
 						<Image
-							className="absolute right-[200px]  h-[35px] w-[35px] bottom-[00px]"
+							className="absolute right-[200px] bottom-[00px]"
 							src={resultInfoByName?.src ?? ""}
 							alt="Result image"
 						/>
@@ -241,7 +241,7 @@ const ResultPage: FC = () => {
 					<div className="flex flex-col justify-center items-center">
 						<Image
 							priority
-							className="w-auto h-[50px] sm:h-[50px]"
+							className="w-[50px] h-[50px] "
 							alt="result image"
 							src={resultInfoByName?.src ?? girl}
 						/>
