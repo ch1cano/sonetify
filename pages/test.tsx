@@ -90,13 +90,13 @@ const topicQuestions: Record<TestResult, string[]> = {
 		`Ты склонен к трудоголизму, осуждаешь себя за бесцельно проведенное время.`,
 	],
 };
-const shuffledQuestions = allQuestions.sort((a, b) => 0.5 - Math.random());
 
 const TestPage: FC = () => {
 	const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
 	const [currentQuestion, setCurrentQuestion] = useState<string>("");
 	const router = useRouter();
 	const testResult = useTestResult();
+	const shuffledQuestions = allQuestions.sort((a, b) => 0.5 - Math.random());
 	useEffect(() => {
 		const shuffledQuestions = allQuestions.sort((a, b) => 0.5 - Math.random());
 		setCurrentQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -155,3 +155,5 @@ const TestPage: FC = () => {
 };
 
 export default TestPage;
+
+
