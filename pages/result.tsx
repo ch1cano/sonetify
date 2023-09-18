@@ -238,7 +238,7 @@ const ResultPage: FC = () => {
 				</main>
 			) : (
 				<main className="flex w-full flex-grow flex-col justify-end items-center gap-5">
-					<div className="flex flex-col justify-center items-center">
+					<div className="flex flex-col justify-center items-center firs">
 						<Image
 							priority
 							className="w-auto h-[150px] "
