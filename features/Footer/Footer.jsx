@@ -16,6 +16,9 @@ const Footer = () => {
 				<Link href={"/oferta"}>
 					<div className={s.oferta}>Оферта</div>
 				</Link>
+				<Link href={"/soglasieReklama"}>
+					<div className={s.oferta}>Согласие на рекламу</div>
+				</Link>
 			</div>
 			<div>
 				Юридический адрес: 119602, г. Москва, <br />
