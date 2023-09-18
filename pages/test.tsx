@@ -91,15 +91,18 @@ const topicQuestions: Record<TestResult, string[]> = {
 	],
 };
 
-const TestPage: FC = () => {
-	const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
-	const [currentQuestion, setCurrentQuestion] = useState<string>("");
-	const router = useRouter();
-	const testResult = useTestResult();
-	const shuffledQuestions = allQuestions.sort((a, b) => 0.5 - Math.random());
-	useEffect(() => {
-		setCurrentQuestion(shuffledQuestions[currentQuestionIndex]);
-	  }, [currentQuestionIndex, shuffledQuestions]);
+	const TestPage: FC = () => {
+		const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
+		const [currentQuestion, setCurrentQuestion] = useState<string>("");
+		const router = useRouter();
+		const testResult = useTestResult();
+		const [shuffledQuestions, setShuffledQuestions] = useState<string[]>([]);
+		
+		useEffect(() => {
+		  const shuffledArray = allQuestions.slice().sort((a, b) => 0.5 - Math.random());
+		  setShuffledQuestions(shuffledArray);
+		  setCurrentQuestion(shuffledArray[currentQuestionIndex]);
+		}, [currentQuestionIndex]);
 	return (
 		<>
 			<main className="w-full h-full flex flex-col intro justify-center items-center gap-4 mb-10">
