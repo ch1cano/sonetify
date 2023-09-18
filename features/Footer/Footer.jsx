@@ -13,7 +13,7 @@ const Footer = () => {
 				<Link href={"/soglasie"}>
 					<div className={s.oferta}>Обработка персональных данных</div>
 				</Link>
-				<br /> Согласие реклама
+				<br />Согласие реклама
 			</div>
 			<div>
 				<Link href={"/oferta"}>
