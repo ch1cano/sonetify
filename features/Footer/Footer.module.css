@@ -2,13 +2,17 @@
 	font-family: "firs";
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 100%;
 	padding-top: 250px;
-	margin-bottom: 10px;
+	padding-bottom: 20px;
 	font-size: 14px;
 	background-color: #ffffff;
 	color: #000000;
+}
+
+.div_e {
+	margin-bottom: -15px;
 }
 
 .oferta {
@@ -36,7 +40,6 @@
 		text-align: center;
 		justify-content: center;
 		font-size: 10px;
-		padding-top: 0px;
 	}
 	.oferta {
 		font-size: 12px;
