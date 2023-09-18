@@ -37,10 +37,9 @@ const ConsultationsPage = () => {
 						</a>
 					</div>
 				</section>
-			</main>
-			<footer>
 				<Footer />
-			</footer>
+			</main>
+			<footer className={s.footer}></footer>
 		</>
 	);
 };

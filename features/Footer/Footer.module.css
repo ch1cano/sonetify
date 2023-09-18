@@ -4,10 +4,8 @@
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
-	height: 40px;
-	margin-top: 30px;
+	padding-top: 250px;
 	margin-bottom: 10px;
-	padding-top: 150px;
 	font-size: 14px;
 	background-color: #ffffff;
 	color: #000000;
@@ -27,6 +25,7 @@
 @media (max-width: 1440px) {
 	.footer {
 		font-size: 12px;
+		padding-top: 0px;
 	}
 }
 
@@ -37,6 +36,7 @@
 		text-align: center;
 		justify-content: center;
 		font-size: 10px;
+		padding-top: 0px;
 	}
 	.oferta {
 		font-size: 12px;

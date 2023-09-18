@@ -11,6 +11,7 @@ import puzzle5 from "@/assets/puzzles/униженность.png";
 interface MyForm {
 	email: string;
 	tel: string;
+	name: string;
 }
 
 const Form = () => {
@@ -53,10 +54,24 @@ const Form = () => {
 						инсайтов уже спешит к вам!{" "}
 					</p>
 				</div>
-				<div className={s.inputName}>Имя:</div>
+				<div className={s.inputName}>Контактное лицо</div>
+				<input
+					className={s.email}
+					type="text"
+					placeholder="Ваше имя"
+					{...register("name", {
+						required: "Введите ваше имя",
+						minLength: { value: 2, message: "Введите имя полностью" },
+						maxLength: {
+							value: 30,
+							message: "Ошибка",
+						},
+					})}
+				/>
 
 				<div className={s.inputName}>Email:</div>
 				<input
+					placeholder="Ваша почта"
 					className={s.email}
 					type="email"
 					{...register("email", {
