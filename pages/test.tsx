@@ -134,7 +134,7 @@ const TestPage: FC = () => {
 								return;
 							}
 						}}
-						className={s.yesno + " px-10 py-4 w-[150px] rounded-[10px] bg-gray border-2 bg-gray-200"}>
+						className={s.yesno + "px-10 py-4 w-[150px] rounded-[10px] bg-gray border-2 bg-gray-200"}>
 						ДА
 					</button>
 					<button
