@@ -247,7 +247,7 @@ const ResultPage: FC = () => {
 						/>
 						<h2
 							className={`font-bold px-[20px] text-2rem flex flex-col justify-center items-center intro`}>
-							<p className="bg-[#fbff00] p-1 rounded-[8px] shadow-md">
+							<p className="bg-[#fbff00] p-1 rounded-[8px] shadow-md items-center text-center">
 								{resultInfoByName?.title}
 							</p>
 						</h2>
