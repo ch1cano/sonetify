@@ -128,29 +128,36 @@ const TestPage: FC = () => {
 					{currentQuestion}
 				</span>
 				<div className="flex flex-col gap-[45px] mt-[28px]">
-        <button
-          onClick={() => {
-            Object.keys(topicQuestions).forEach((key) => {
-              const testResultKey = key as TestResult;
-              if (topicQuestions[testResultKey].includes(currentQuestion)) {
-                testResult.addPoint(testResultKey);
-              }
-            });
-            handleNextQuestion();
-          }}
-          className={s.yesno + " px-10 py-4 w-[150px] rounded-[10px] bg-gray border-2 bg-gray-200"}
-        >
-          ДА
-        </button>
-        <button
-          onClick={() => {
-            handleNextQuestion();
-          }}
-          className={s.yesno + " px-10 py-4 w-[150px] rounded-[10px] bg-gray border-1 bg-gray-200"}
-        >
-          НЕТ
-        </button>
-      </div>
+					<button
+						onClick={() => {
+							Object.keys(topicQuestions).forEach((key) => {
+								const testResultKey = key as TestResult;
+								if (topicQuestions[testResultKey].includes(currentQuestion)) {
+									testResult.addPoint(testResultKey);
+								}
+							});
+							setCurrentQuestionIndex((prev) => prev + 1);
+							if (currentQuestionIndex >= shuffledQuestions.length - 1) {
+								router.push("/result");
+								return;
+							}
+						}}
+						className={s.yesno + "px-10 py-4 w-[150px] rounded-[10px] bg-gray border-2 bg-gray-200"}>
+						ДА
+					</button>
+					<button
+						onClick={() => {
+							setCurrentQuestionIndex((prev) => prev + 1);
+							if (currentQuestionIndex >= shuffledQuestions.length - 1) {
+								router.push("/result");
+								return;
+							}
+						}}
+						className={s.yesno + " px-10 py-4 w-[150px] rounded-[10px] bg-gray border-1 bg-gray-200"}>
+						НЕТ
+					</button>
+				</div>
+
 				<Footer />
 			</main>
 		</>
