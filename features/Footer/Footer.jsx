@@ -9,12 +9,18 @@ const Footer = () => {
 				Индивидуальный предприниматель Репринец Софии Юрьевна
 				<br />
 				ОГРНИП 323774600181956 <br />
-				ИНН 972902172811 <br /> Обработка персональных данных <br /> Согласие
-				реклама
+				ИНН 972902172811 <br />
+				<Link href={"/soglasie"}>
+					<div className={s.oferta}>Обработка персональных данных</div>
+				</Link>
+				<br /> Согласие реклама
 			</div>
 			<div>
 				<Link href={"/oferta"}>
 					<div className={s.oferta}>Оферта</div>
+				</Link>
+				<Link href={"/soglasieReklama"}>
+					<div className={s.oferta}>Согласие на рекламу</div>
 				</Link>
 			</div>
 			<div>
