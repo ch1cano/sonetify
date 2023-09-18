@@ -238,7 +238,7 @@ const ResultPage: FC = () => {
 				</main>
 			) : (
 				<main className="flex w-full flex-grow flex-col justify-end items-center gap-5">
-					<div className="flex flex-col justify-center items-center firs">
+					<div className="flex flex-col justify-center items-center ">
 						<Image
 							priority
 							className="w-auto h-[150px] "
@@ -252,7 +252,7 @@ const ResultPage: FC = () => {
 							</p>
 						</h2>
 					</div>
-					<p className="w-[50%] text-[0.5rem] text-center">
+					<p className="firs w-[50%] text-[0.5rem] text-center">
 						{resultInfoByName?.description}
 					</p>
 					<Link href={"/checklist"}>
