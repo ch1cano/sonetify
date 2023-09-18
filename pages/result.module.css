@@ -1,52 +1,57 @@
 .pokinyt {
-  display: flex;
-  opacity: 0.1;
-  font-size: 6rem;
-  padding-top: 20px;
-  align-items: center;
-  text-align: center;
+	display: flex;
+	opacity: 0.1;
+	font-size: 6rem;
+	padding-top: 20px;
+	align-items: center;
+	text-align: center;
+}
+
+.fist {
+	font-family: "firs";
+	background-color: #fbff00;
+	border-radius: 3px;
 }
 
 .titleSyka {
-  display: flex;
-  align-items: center;
-  text-align: center;
+	display: flex;
+	align-items: center;
+	text-align: center;
 }
 
-@media (max-width:900px) {
-    .pokinyt {
-        font-size: 4rem;
-        right: -13%;
-    }
+@media (max-width: 900px) {
+	.pokinyt {
+		font-size: 4rem;
+		right: -13%;
+	}
 }
-    
-@media (max-width:575px) {
-    .pokinyt {
-        font-size: 2.5rem;
-        right: 5%;
-        align-items: center;
-    }
+
+@media (max-width: 575px) {
+	.pokinyt {
+		font-size: 2.5rem;
+		right: 5%;
+		align-items: center;
+	}
 }
 
 @media (max-width: 1023px) {
-    .image {
-      position: static;
-      max-width: 150px;
-      max-height: 230px;
-    }
-  
-    .imageContainer {
-      position: static;
-    }
-  }
-  
-  .main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .paragraph {
-    max-width: 600px;
-  }
-  
+	.image {
+		position: static;
+		max-width: 150px;
+		max-height: 230px;
+	}
+
+	.imageContainer {
+		position: static;
+	}
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.paragraph {
+	max-width: 600px;
+}
