@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useMemo, useState } from "react";
 import s from "@/pages/test.module.css";
 import { useTestResult } from "@/hooks/useTestResult";
 import { TestResult } from "@/models/testResult";
@@ -96,12 +96,20 @@ const TestPage: FC = () => {
 	const [currentQuestion, setCurrentQuestion] = useState<string>("");
 	const router = useRouter();
 	const testResult = useTestResult();
-    const shuffledQuestions = allQuestions.sort((a, b) => 0.5 - Math.random());
+	const shuffledQuestions = useMemo(() => {
+	  return allQuestions.sort((a, b) => 0.5 - Math.random());
+	}, []);
+  
 	useEffect(() => {
-	  // Shuffle questions whenever currentQuestionIndex changes
-	  const shuffledQuestions = allQuestions.sort((a, b) => 0.5 - Math.random());
 	  setCurrentQuestion(shuffledQuestions[currentQuestionIndex]);
-	}, [currentQuestionIndex]);
+	}, [currentQuestionIndex, shuffledQuestions]);
+  
+	const handleNextQuestion = () => {
+	  setCurrentQuestionIndex((prev) => prev + 1);
+	  if (currentQuestionIndex >= shuffledQuestions.length - 1) {
+		router.push("/result");
+	  }
+	};
 	return (
 		<>
 			<main className="w-full h-full flex flex-col intro justify-center items-center gap-4 mb-10">
@@ -149,6 +157,7 @@ const TestPage: FC = () => {
 						НЕТ
 					</button>
 				</div>
+
 				<Footer />
 			</main>
 		</>
@@ -156,5 +165,8 @@ const TestPage: FC = () => {
 };
 
 export default TestPage;
+
+
+
 
 
