@@ -1,5 +1,7 @@
 import { useRouter } from "next/router";
-import { FC, useEffect, useMemo, useState } from "react";
+
+import { FC, useEffect, useState, useMemo } from "react";
+
 import s from "@/pages/test.module.css";
 import { useTestResult } from "@/hooks/useTestResult";
 import { TestResult } from "@/models/testResult";
@@ -100,10 +102,13 @@ const TestPage: FC = () => {
 	const router = useRouter();
 	const testResult = useTestResult();
 
-	const shuffledQuestions = allQuestions.sort((a, b) => 0.5 - Math.random());
-	const uniqueQuestions = shuffledQuestions.filter(
-		(question, index) => shuffledQuestions.indexOf(question) === index
+	const shuffledQuestions = useMemo(
+		() => allQuestions.sort(() => 0.5 - Math.random()),
+		[]
+
 	);
+	const uniqueQuestions = Array.from(new Set(shuffledQuestions));
+
 	useEffect(() => {
 
 		setCurrentQuestion(uniqueQuestions[currentQuestionIndex]);
