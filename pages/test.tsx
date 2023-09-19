@@ -97,12 +97,12 @@ const TestPage: FC = () => {
 	const router = useRouter();
 	const testResult = useTestResult();
 	const shuffledQuestions = allQuestions.sort((a, b) => 0.5 - Math.random());
-	shuffledQuestions.filter(
+	const uniqueQuestions = shuffledQuestions.filter(
 		(question, index) => shuffledQuestions.indexOf(question) === index
 	);
 	useEffect(() => {
-		setCurrentQuestion(shuffledQuestions[currentQuestionIndex]);
-	}, [currentQuestionIndex, shuffledQuestions]);
+		setCurrentQuestion(uniqueQuestions[currentQuestionIndex]);
+	}, [currentQuestionIndex, uniqueQuestions]);
 	return (
 		<>
 			<main className="w-full h-full flex flex-col intro justify-center items-center gap-4 mb-10">
