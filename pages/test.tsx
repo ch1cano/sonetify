@@ -101,12 +101,13 @@ const TestPage: FC = () => {
 	const testResult = useTestResult();
 
 	const shuffledQuestions = allQuestions.sort((a, b) => 0.5 - Math.random());
-	shuffledQuestions.filter(
+	const uniqueQuestions = shuffledQuestions.filter(
 		(question, index) => shuffledQuestions.indexOf(question) === index
 	);
 	useEffect(() => {
-		setCurrentQuestion(shuffledQuestions[currentQuestionIndex]);
-	}, [currentQuestionIndex, shuffledQuestions]);
+
+		setCurrentQuestion(uniqueQuestions[currentQuestionIndex]);
+	}, [currentQuestionIndex, uniqueQuestions]);
 
 	return (
 		<>
